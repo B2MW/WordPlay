@@ -7,6 +7,7 @@
 //
 
 #import "EnterAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
 @interface EnterAdjectiveViewController ()
 
@@ -24,6 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ResultsViewController *enteredAdjective = segue.destinationViewController;
+    enteredAdjective.title = self.adjectiveTextField.text;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -35,3 +41,4 @@
 */
 
 @end
+

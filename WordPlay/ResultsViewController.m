@@ -1,19 +1,18 @@
 //
-//  EnterNameViewController.m
+//  ResultsViewController.m
 //  WordPlay
 //
-//  Created by Bradley Walker on 9/30/14.
+//  Created by Michael Maloof on 9/30/14.
 //  Copyright (c) 2014 BlackSummerVentures. All rights reserved.
 //
 
-#import "EnterNameViewController.h"
-#import "EnterAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
-@interface EnterNameViewController ()
+@interface ResultsViewController ()
 
 @end
 
-@implementation EnterNameViewController
+@implementation ResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    EnterAdjectiveViewController *enteredName = segue.destinationViewController;
-    enteredName.title = self.nameTextField.text;
 }
 
 /*

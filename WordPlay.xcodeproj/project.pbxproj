@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C75027219DB449200564660 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75027119DB449200564660 /* ResultsViewController.m */; };
 		4CE0D07519DB3E4A00C162EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D07419DB3E4A00C162EA /* main.m */; };
 		4CE0D07819DB3E4A00C162EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D07719DB3E4A00C162EA /* AppDelegate.m */; };
 		4CE0D07B19DB3E4A00C162EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D07A19DB3E4A00C162EA /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C75027019DB449200564660 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		4C75027119DB449200564660 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		4CE0D06F19DB3E4A00C162EA /* WordPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE0D07319DB3E4A00C162EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE0D07419DB3E4A00C162EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				4CE0D07919DB3E4A00C162EA /* ViewController.h */,
 				4CE0D07A19DB3E4A00C162EA /* ViewController.m */,
 				4CE0D07C19DB3E4A00C162EA /* Main.storyboard */,
+				4C75027019DB449200564660 /* ResultsViewController.h */,
+				4C75027119DB449200564660 /* ResultsViewController.m */,
 				4CE0D09B19DB42BA00C162EA /* EnterAdjectiveViewController.h */,
 				4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */,
 				4CE0D09819DB41F400C162EA /* EnterNameViewController.h */,
@@ -232,6 +237,7 @@
 				4CE0D07B19DB3E4A00C162EA /* ViewController.m in Sources */,
 				4CE0D07819DB3E4A00C162EA /* AppDelegate.m in Sources */,
 				4CE0D09D19DB42BA00C162EA /* EnterAdjectiveViewController.m in Sources */,
+				4C75027219DB449200564660 /* ResultsViewController.m in Sources */,
 				4CE0D09A19DB41F400C162EA /* EnterNameViewController.m in Sources */,
 				4CE0D07519DB3E4A00C162EA /* main.m in Sources */,
 			);
@@ -424,6 +430,7 @@
 				4CE0D09419DB3E4A00C162EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE0D09519DB3E4A00C162EA /* Build configuration list for PBXNativeTarget "WordPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				4CE0D09719DB3E4A00C162EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
