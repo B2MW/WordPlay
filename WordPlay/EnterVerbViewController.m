@@ -7,8 +7,10 @@
 //
 
 #import "EnterVerbViewController.h"
+#import "EnterExplitiveViewController.h"
 
 @interface EnterVerbViewController ()
+@property IBOutlet UITextField *verbValue;
 
 @end
 
@@ -22,6 +24,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EnterExplitiveViewController *enteredVerb = segue.destinationViewController;
+    enteredVerb = self.verbValue.text;
 }
 
 /*

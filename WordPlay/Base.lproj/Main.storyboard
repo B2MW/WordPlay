@@ -38,7 +38,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="0bU-h0-awR" kind="show" id="vp1-Qx-in8"/>
+                                    <segue destination="STm-14-nxj" kind="show" id="Wjv-5v-s0b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,39 +327,135 @@
             </objects>
             <point key="canvasLocation" x="2586" y="1064"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter Verb View Controller-->
         <scene sceneID="De4-XM-Efv">
             <objects>
-                <viewController id="STm-14-nxj" sceneMemberID="viewController">
+                <viewController id="STm-14-nxj" customClass="EnterVerbViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QC7-iD-m6q"/>
                         <viewControllerLayoutGuide type="bottom" id="eVA-MH-dZn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xVI-ag-KMq">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bR5-ma-mDV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="258" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bo7-sO-gmE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="217" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EK-U5-V5x">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="304" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="5Tv-1u-K5Q" kind="show" id="DwE-m9-o7d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bR5-ma-mDV"/>
+                                <exclude reference="bo7-sO-gmE"/>
+                                <exclude reference="5EK-U5-V5x"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bR5-ma-mDV"/>
+                                <include reference="bo7-sO-gmE"/>
+                                <include reference="5EK-U5-V5x"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="verbValue" destination="bR5-ma-mDV" id="28L-oa-2Mm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLR-kS-Sli" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798.5" y="1750"/>
+            <point key="canvasLocation" x="1117.5" y="1824"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter Explitive View Controller-->
         <scene sceneID="CP7-lz-3YH">
             <objects>
-                <viewController id="5Tv-1u-K5Q" sceneMemberID="viewController">
+                <viewController id="5Tv-1u-K5Q" customClass="EnterExplitiveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1yh-b9-RnF"/>
                         <viewControllerLayoutGuide type="bottom" id="PhE-s1-KeU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hss-Fe-H3u">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zab-K5-Sxq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="222" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ7-JV-eFU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="322" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="0bU-h0-awR" kind="show" identifier="ExplitiveSegue" id="pa2-Le-1vA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-tX-Abs">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="274" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zab-K5-Sxq"/>
+                                <exclude reference="zQ7-JV-eFU"/>
+                                <exclude reference="NNu-tX-Abs"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zab-K5-Sxq"/>
+                                <include reference="zQ7-JV-eFU"/>
+                                <include reference="NNu-tX-Abs"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="explitiveValue" destination="NNu-tX-Abs" id="kI4-M5-2ar"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytx-Qt-gp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476.5" y="1750"/>
+            <point key="canvasLocation" x="1839" y="1824"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="KjY-zo-aKT">

@@ -7,8 +7,10 @@
 //
 
 #import "EnterExplitiveViewController.h"
+#import "EnterNameViewController.h"
 
 @interface EnterExplitiveViewController ()
+@property IBOutlet UITextField *explitiveValue;
 
 @end
 
