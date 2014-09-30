@@ -33,6 +33,15 @@
     NSLog(@"%@ %@", adjectiveValues.name, adjectiveValues.adjective);
 }
 
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if (([identifier isEqualToString:@"AdjectiveSegue"]) && ([self.adjectiveTextField.text isEqualToString:@""])){
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
 /*
 #pragma mark - Navigation
 

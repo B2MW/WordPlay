@@ -33,11 +33,11 @@
 }
 
 - (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([identifier isEqualToString:@"NameSegue"]) {
-        return YES;
+    if (([identifier isEqualToString:@"NameSegue"]) && ([self.nameTextField.text isEqualToString:@""])){
+        return NO;
     }
     else {
-        return NO;
+        return YES;
     }
 }
 
