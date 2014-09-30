@@ -14,6 +14,8 @@
 		4CE0D08019DB3E4A00C162EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE0D07F19DB3E4A00C162EA /* Images.xcassets */; };
 		4CE0D08319DB3E4A00C162EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE0D08119DB3E4A00C162EA /* LaunchScreen.xib */; };
 		4CE0D08F19DB3E4A00C162EA /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D08E19DB3E4A00C162EA /* WordPlayTests.m */; };
+		4CE0D09A19DB41F400C162EA /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D09919DB41F400C162EA /* EnterNameViewController.m */; };
+		4CE0D09D19DB42BA00C162EA /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		4CE0D08819DB3E4A00C162EA /* WordPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE0D08D19DB3E4A00C162EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE0D08E19DB3E4A00C162EA /* WordPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPlayTests.m; sourceTree = "<group>"; };
+		4CE0D09819DB41F400C162EA /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		4CE0D09919DB41F400C162EA /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
+		4CE0D09B19DB42BA00C162EA /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				4CE0D07919DB3E4A00C162EA /* ViewController.h */,
 				4CE0D07A19DB3E4A00C162EA /* ViewController.m */,
 				4CE0D07C19DB3E4A00C162EA /* Main.storyboard */,
+				4CE0D09B19DB42BA00C162EA /* EnterAdjectiveViewController.h */,
+				4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */,
+				4CE0D09819DB41F400C162EA /* EnterNameViewController.h */,
+				4CE0D09919DB41F400C162EA /* EnterNameViewController.m */,
 				4CE0D07F19DB3E4A00C162EA /* Images.xcassets */,
 				4CE0D08119DB3E4A00C162EA /* LaunchScreen.xib */,
 				4CE0D07219DB3E4A00C162EA /* Supporting Files */,
@@ -221,6 +231,8 @@
 			files = (
 				4CE0D07B19DB3E4A00C162EA /* ViewController.m in Sources */,
 				4CE0D07819DB3E4A00C162EA /* AppDelegate.m in Sources */,
+				4CE0D09D19DB42BA00C162EA /* EnterAdjectiveViewController.m in Sources */,
+				4CE0D09A19DB41F400C162EA /* EnterNameViewController.m in Sources */,
 				4CE0D07519DB3E4A00C162EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
