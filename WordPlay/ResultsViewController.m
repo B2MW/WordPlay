@@ -10,6 +10,7 @@
 
 
 @interface ResultsViewController ()
+@property IBOutlet UITextView *resultsTextView;
 @end
 
 @implementation ResultsViewController

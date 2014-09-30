@@ -10,8 +10,9 @@
 #import "EnterAdjectiveViewController.h"
 
 @interface EnterNameViewController ()
-
+@property IBOutlet UITextField *nameTextField;
 @end
+
 
 @implementation EnterNameViewController
 
@@ -29,6 +30,15 @@
     EnterAdjectiveViewController *enteredName = segue.destinationViewController;
     enteredName.name = self.nameTextField.text;
     NSLog(@"%@", enteredName.name);
+}
+
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"NameSegue"]) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
 }
 
 

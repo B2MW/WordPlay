@@ -10,7 +10,7 @@
 #import "ResultsViewController.h"
 
 @interface EnterAdjectiveViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
 @end
 
 @implementation EnterAdjectiveViewController
@@ -27,7 +27,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ResultsViewController *adjectiveValues = segue.destinationViewController;
-    .name =
+    adjectiveValues.name = self.name;
     adjectiveValues.adjective = self.adjectiveTextField.text;
 
     NSLog(@"%@ %@", adjectiveValues.name, adjectiveValues.adjective);
