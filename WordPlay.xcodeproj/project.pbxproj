@@ -17,6 +17,8 @@
 		4CE0D08F19DB3E4A00C162EA /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D08E19DB3E4A00C162EA /* WordPlayTests.m */; };
 		4CE0D09A19DB41F400C162EA /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D09919DB41F400C162EA /* EnterNameViewController.m */; };
 		4CE0D09D19DB42BA00C162EA /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */; };
+		4CE0D0A019DB690600C162EA /* EnterVerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D09F19DB690600C162EA /* EnterVerbViewController.m */; };
+		4CE0D0A319DB695200C162EA /* EnterExplitiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0D0A219DB695200C162EA /* EnterExplitiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		4CE0D09919DB41F400C162EA /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
 		4CE0D09B19DB42BA00C162EA /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
 		4CE0D09C19DB42BA00C162EA /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		4CE0D09E19DB690600C162EA /* EnterVerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterVerbViewController.h; sourceTree = "<group>"; };
+		4CE0D09F19DB690600C162EA /* EnterVerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterVerbViewController.m; sourceTree = "<group>"; };
+		4CE0D0A119DB695200C162EA /* EnterExplitiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterExplitiveViewController.h; sourceTree = "<group>"; };
+		4CE0D0A219DB695200C162EA /* EnterExplitiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterExplitiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				4CE0D07919DB3E4A00C162EA /* ViewController.h */,
 				4CE0D07A19DB3E4A00C162EA /* ViewController.m */,
 				4CE0D07C19DB3E4A00C162EA /* Main.storyboard */,
+				4CE0D09E19DB690600C162EA /* EnterVerbViewController.h */,
+				4CE0D09F19DB690600C162EA /* EnterVerbViewController.m */,
+				4CE0D0A119DB695200C162EA /* EnterExplitiveViewController.h */,
+				4CE0D0A219DB695200C162EA /* EnterExplitiveViewController.m */,
 				4C75027019DB449200564660 /* ResultsViewController.h */,
 				4C75027119DB449200564660 /* ResultsViewController.m */,
 				4CE0D09B19DB42BA00C162EA /* EnterAdjectiveViewController.h */,
@@ -234,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE0D0A319DB695200C162EA /* EnterExplitiveViewController.m in Sources */,
 				4CE0D07B19DB3E4A00C162EA /* ViewController.m in Sources */,
+				4CE0D0A019DB690600C162EA /* EnterVerbViewController.m in Sources */,
 				4CE0D07819DB3E4A00C162EA /* AppDelegate.m in Sources */,
 				4CE0D09D19DB42BA00C162EA /* EnterAdjectiveViewController.m in Sources */,
 				4C75027219DB449200564660 /* ResultsViewController.m in Sources */,
