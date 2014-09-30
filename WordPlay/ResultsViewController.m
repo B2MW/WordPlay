@@ -9,19 +9,24 @@
 #import "ResultsViewController.h"
 
 @interface ResultsViewController ()
-
+@property (weak, nonatomic) NSString *story;
 @end
 
 @implementation ResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.story = "%@ went to the %@ mall.", self.name, self.adjective;
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
 }
 
 /*

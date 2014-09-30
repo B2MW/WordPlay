@@ -11,5 +11,6 @@
 @interface EnterAdjectiveViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
 @property (weak, nonatomic) NSString *name;
+@property (weak, nonatomic) NSString *adjective;
 
 @end
