@@ -26,9 +26,11 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    EnterAdjectiveViewController *name = segue.destinationViewController;
-    name.name = self.nameTextField.text;
+    EnterAdjectiveViewController *enteredName = segue.destinationViewController;
+    enteredName.name = self.nameTextField.text;
+    NSLog(@"%@", enteredName.name);
 }
+
 
 /*
 #pragma mark - Navigation

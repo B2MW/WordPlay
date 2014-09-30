@@ -10,6 +10,8 @@
 
 @interface ResultsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
-@property (weak, nonatomic) NSString *name, *adjective;
+@property (weak, nonatomic) NSString *name;
+@property (weak, nonatomic) NSString *adjective;
+
 
 @end

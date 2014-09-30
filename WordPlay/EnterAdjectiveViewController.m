@@ -8,7 +8,6 @@
 
 #import "EnterAdjectiveViewController.h"
 #import "ResultsViewController.h"
-#import "EnterNameViewController.h"
 
 @interface EnterAdjectiveViewController ()
 
@@ -27,9 +26,11 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    ResultsViewController *adjectiveTextField = segue.destinationViewController;
-    adjectiveTextField.name = self.name;
-    adjectiveTextField.adjective = self.adjective;
+    ResultsViewController *adjectiveValues = segue.destinationViewController;
+    .name =
+    adjectiveValues.adjective = self.adjectiveTextField.text;
+
+    NSLog(@"%@ %@", adjectiveValues.name, adjectiveValues.adjective);
 }
 
 /*
