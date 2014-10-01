@@ -29,7 +29,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     EnterAdjectiveViewController *enteredName = segue.destinationViewController;
     enteredName.name = self.nameTextField.text;
-    NSLog(@"%@", enteredName.name);
+    enteredName.explitive = self.explitive;
+    enteredName.verb = self.verb;
 }
 
 - (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {

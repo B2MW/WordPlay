@@ -10,4 +10,5 @@
 
 
 @interface EnterNameViewController : UIViewController
+@property NSString *explitive, *verb;
 @end

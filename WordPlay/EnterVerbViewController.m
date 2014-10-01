@@ -28,8 +28,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     EnterExplitiveViewController *enteredVerb = segue.destinationViewController;
-    enteredVerb = self.verbValue.text;
+    enteredVerb.verb = self.verbValue.text;
 }
+
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if (([identifier isEqualToString:@"VerbSegue"]) && ([self.verbValue.text isEqualToString:@""])){
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
 
 /*
 #pragma mark - Navigation

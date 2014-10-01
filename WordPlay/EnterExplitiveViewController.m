@@ -26,6 +26,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EnterNameViewController *explitiveValues = segue.destinationViewController;
+    explitiveValues.verb = self.verb;
+    explitiveValues.explitive = self.explitiveValue.text;
+}
+
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if (([identifier isEqualToString:@"ExplitiveSegue"]) && ([self.explitiveValue.text isEqualToString:@""])){
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
+
 /*
 #pragma mark - Navigation
 

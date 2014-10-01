@@ -9,8 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsViewController : UIViewController
-@property NSString *name;
-@property NSString *adjective;
-
-
+@property NSString *verb, *explitive, *name, *adjective;
 @end

@@ -10,7 +10,7 @@
 #import "ResultsViewController.h"
 
 @interface EnterAdjectiveViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
+@property IBOutlet UITextField *adjectiveTextField;
 @end
 
 @implementation EnterAdjectiveViewController
@@ -27,10 +27,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ResultsViewController *adjectiveValues = segue.destinationViewController;
-    adjectiveValues.name = self.name;
     adjectiveValues.adjective = self.adjectiveTextField.text;
-
-    NSLog(@"%@ %@", adjectiveValues.name, adjectiveValues.adjective);
+    adjectiveValues.name = self.name;
+    adjectiveValues.explitive = self.explitive;
+    adjectiveValues.verb = self.verb;
 }
 
 - (BOOL) shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {

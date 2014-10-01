@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EnterExplitiveViewController : UIViewController
-
+@property NSString *verb;
 @end
